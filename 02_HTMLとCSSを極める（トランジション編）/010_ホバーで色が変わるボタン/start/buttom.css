@@ -1,0 +1,17 @@
+button {
+  display: block;
+  width: 120px;
+  height: 40px;
+  margin: 50px auto;
+  border: 1px solid black;
+  -webkit-transition: all 0.5s ease-out 0.2s;
+  transition: all 0.5s ease-out 0.2s;
+  background-color: white;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+/*# sourceMappingURL=buttom.css.map */

@@ -1,0 +1,15 @@
+button{
+    display: block;
+    width:120px;
+    height:40px;
+    margin:50px auto;
+    border: 1px solid black;
+    transition:all 0.5s ease-out 0.2s;
+    background-color: white;
+    font-weight: 600;
+
+    &:hover{
+        background-color: black;
+        color:white;
+    }
+}

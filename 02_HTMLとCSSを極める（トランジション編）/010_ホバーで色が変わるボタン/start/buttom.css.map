@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,OAAO,EAAE,KAAK;EACd,KAAK,EAAC,KAAK;EACX,MAAM,EAAC,IAAI;EACX,MAAM,EAAC,SAAS;EAChB,MAAM,EAAE,eAAe;EACvB,UAAU,EAAC,sBAAsB;EACjC,gBAAgB,EAAE,KAAK;EACvB,WAAW,EAAE,GAAG;CAMnB;;AAdD,AAUI,MAVE,AAUD,MAAM,CAAA;EACH,gBAAgB,EAAE,KAAK;EACvB,KAAK,EAAC,KAAK;CACd",
+    "sources": [
+        "buttom.scss"
+    ],
+    "names": [],
+    "file": "buttom.css"
+}
