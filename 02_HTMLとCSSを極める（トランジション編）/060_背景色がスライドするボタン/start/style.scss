@@ -6,6 +6,7 @@ $cBlack: black;
 }
 
 .btn {
+  position: relative;
   background-color: $cWhite;
   color: $cBlack;
   border: 1px solid $cBlack;
@@ -14,9 +15,25 @@ $cBlack: black;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s;
+  overflow: hidden;
+  z-index: 1;
 
   &:hover {
-    background-color: $cBlack;
     color: $cWhite;
+    &::after{
+      transform:none;
+    }
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background-color: black;
+    transform:translateX(-100%);
+    transition: transform 0.3s;
   }
 }

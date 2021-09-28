@@ -18,5 +18,50 @@
 
 .try .btn.cubic {
   /** スタイルをここに追加。*/
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 300px;
+          perspective: 300px;
+}
+
+.try .btn.cubic span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  line-height: 50px;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+.try .btn.cubic .hovering {
+  background-color: black;
+  color: white;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+  -webkit-transform-origin: center center -25px;
+          transform-origin: center center -25px;
+  opacity: 1;
+}
+
+.try .btn.cubic .default {
+  background-color: white;
+  color: black;
+  -webkit-transform-origin: center center -25px;
+          transform-origin: center center -25px;
+}
+
+.try .btn.cubic:hover .hovering {
+  -webkit-transform: none;
+          transform: none;
+  opacity: 1;
+}
+
+.try .btn.cubic:hover .default {
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
 }
 /*# sourceMappingURL=try.css.map */

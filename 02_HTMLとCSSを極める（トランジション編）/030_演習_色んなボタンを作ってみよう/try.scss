@@ -16,5 +16,49 @@ $cBlack: black;
     text-decoration: none !important;
 
     /* ここにボタンのスタイルを追加していこう */
+
+    &.float{
+      &:hover{
+        background-color: $cBlack;
+        color:$cWhite;
+        box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+      }
+    }
+
+    &.filled{
+        background-color: $cBlack;
+        color:$cWhite;
+        box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.5);
+        &:hover{
+          background-color: $cWhite;
+          color: $cBlack;
+          box-shadow: none;
+        }
+    }
+
+    &.letter-spacing{
+      &:hover{
+        background-color: $cBlack;
+        color:$cWhite;
+        letter-spacing:3px;
+      }
+    }
+
+    &.shadow{
+      &:hover{
+        box-shadow: 4px 4px $cBlack;
+        transform: translate(-4px, -4px);
+      }
+    }
+
+    &.solid{
+        border-radius: 6px;
+        box-shadow: 2px 2px $cBlack;
+        transform: translate(-2px, -2px);
+        &:hover{
+          transform: none;
+          box-shadow: none;
+        }
+    }
   }
 }
