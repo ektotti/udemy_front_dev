@@ -8,12 +8,16 @@
 .child {
   background-color: orange;
   width: 100px;
-  height: 100px;
   font-weight: 600;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .child.v2 {
   background-color: palevioletred;
+  -ms-flex-preferred-size: 1000px;
+      flex-basis: 1000px;
 }
 
 .child.v3 {
@@ -24,8 +28,28 @@
  * 横方向のレイアウト
  */
 /* インライン要素に対して */
+.parent {
+  text-align: center;
+}
+
+.child {
+  display: inline-block;
+}
+
 /* ブロック要素を中央揃え */
 /**
  * 上下方向のレイアウト
  */
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 /*# sourceMappingURL=style.css.map */

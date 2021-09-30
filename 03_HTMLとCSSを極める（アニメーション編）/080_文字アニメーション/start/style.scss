@@ -1,0 +1,51 @@
+@import 'mixin';
+
+body{
+    margin:0;
+}
+
+#container{
+    position:relatibe;
+    height:100vh;
+    background-color: teal;
+}
+.animation-title{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    color:white;
+     
+    & .char{
+        display: inline-block;
+        // transform: translateY(-50%);
+        opacity:0;
+        font-size:2em;
+    }
+
+    &.inview{
+        @for $i from 1 through 9{
+            & .char:nth-child(#{$i}){
+                @include animation(
+                    $name:char-animation,
+                    $duration:0.7s,
+                    $delay: $i * 0.04s,
+                    $timing-function:ease-in-out,
+                )
+            }
+        }
+    }
+
+    @keyframes char-animation{
+        0%{
+            transform: translateY(-50%);
+            opacity:0;
+        }
+
+        100%{
+            transform: translateY(0);
+            opacity:1;
+        }
+    }
+
+}

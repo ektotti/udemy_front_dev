@@ -7,11 +7,13 @@
 .child {
   background-color: orange;
   width: 100px;
-  height: 100px;
+  // height: 100px;
   font-weight: 600;
+  flex-grow: 1;
 }
 .child.v2 {
   background-color: palevioletred;
+  flex-basis:1000px;
 }
 .child.v3 {
   background-color: rebeccapurple;
@@ -21,12 +23,12 @@
  * 横方向のレイアウト
  */
 /* インライン要素に対して */
-// .parent {
-//   text-align: left;
-// }
-// .child {
-//     display: inline-block;
-// }
+.parent {
+  text-align: center;
+}
+.child {
+    display: inline-block;
+}
 
 /* ブロック要素を中央揃え */
 // .parent {
@@ -44,13 +46,12 @@
 // .child {
 //   position: absolute;
 //   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
+//   transform: translateY(-50%);
 // }
 
-// .parent {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-end;
-// }
+.parent {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  // align-items: center;
+}

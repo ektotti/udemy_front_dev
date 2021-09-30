@@ -12,13 +12,12 @@ $cBlack: black;
     animation: sk-bouncedelay 1.4s infinite;
   }
 
-  & .bounce1 {
-    animation-delay: -0.32s;
+@for $i from 1 through 2{
+  & .bounce#{$i} {
+    animation-delay: -0.32s/$i;
   }
+}
 
-  & .bounce2 {
-    animation-delay: -0.16s;
-  }
 }
 
 @keyframes sk-bouncedelay {
