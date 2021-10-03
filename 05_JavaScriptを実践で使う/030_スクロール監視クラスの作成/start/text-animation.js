@@ -1,8 +1,13 @@
-
+// text-animation.jsに以下のコードをカット＆ペースト
+// してファイル分割をしましょう。
 class TextAnimation {
     constructor(el) {
         this.DOM = {};
-        this.DOM.el = el instanceof HTMLElement ? el : document.querySelector(el);
+        if(el instanceof HTMLElement){
+            this.DOM.el = el;
+        }else{
+            this.DOM.el = document.querySelector(el);
+        }
         this.chars = this.DOM.el.innerHTML.trim().split("");
         this.DOM.el.innerHTML = this._splitText();
     }
