@@ -8,11 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <button class="mobile-menu-icon"
-    onclick="document.querySelector('body').classList.toggle('menu-open');">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+    <div id="grand-container">
+        <div id="container">
+            <header>
+                <button class="mobile-menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </header>
+        </div>
+        <nav class="mobile-menu">
+            <ul class="mobile-menu__main">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">
+                        <span class="main-title">Our Service</span>
+                        <span class="subtitle">サービスについて</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">
+                        <span class="main-title">About Us</span>
+                        <span class="subtitle">私達について</span>
+                    </a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="#">
+                        <span class="main-title">Contact Us</span>
+                        <span class="subtitle">コンタクト方法</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
